@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" type="text/css" />
     {% endblock %}
     
-    {% block corejs %}
-    {% endblock %}
-    
     {% block title %}
     <title>Flask Task Manager</title>
     {% endblock %}
@@ -23,9 +20,12 @@
     {% block content %}
     {% endblock %}
     
-    {% block postloadjs %}
+    {% block corejs %}
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    {% endblock %}
+    
+    {% block postloadjs %}
     {% endblock %}
 </body>
 </html>
