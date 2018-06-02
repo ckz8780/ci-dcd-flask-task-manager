@@ -5,23 +5,22 @@
 <div class="row">
     <form action="{{ url_for('insert_task') }}" method="POST"  class="col s12">
         <div class="row">
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">poll</i>
-                    <select id="category" name="category_name">
-                  <option value="" disabled selected>Choose Category</option>
-                  {% for cat in categories %}
-                      <option value="{{cat.category_name}}">{{cat.category_name}}</option>
-                  {% endfor %}
-                </select>
-                    <label>Task Category</label>
-                </div>
-                <div class="add-category">
-                    <a href="{{url_for('new_category')}}" class="waves-effect waves-light btn">
-                        <i class="material-icons right">playlist_add</i>Add Category
-                    </a>
-                </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">poll</i>
+                <select id="category" name="category_name">
+              <option value="" disabled selected>Choose Category</option>
+              {% for cat in categories %}
+                  <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+              {% endfor %}
+            </select>
+                <label>Task Category</label>
             </div>
+            <div class="add-category">
+                <a href="{{url_for('new_category')}}" class="waves-effect waves-light btn">
+                    <i class="material-icons right">playlist_add</i>Add Category
+                </a>
+            </div>
+        </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">assignment</i>
