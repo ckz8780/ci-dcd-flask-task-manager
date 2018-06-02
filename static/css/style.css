@@ -32,3 +32,12 @@ nav .brand-logo {
 .add-category {
     margin-left: 55px;
 }
+
+.button-row button {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.button-row a {
+    width: 100%;
+}
